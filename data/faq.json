@@ -1,0 +1,58 @@
+[
+  {
+    "id": "faq_return_window",
+    "patterns": [
+      "what is your return policy",
+      "how long do i have to return an item",
+      "what is the return window",
+      "can i return items after 30 days"
+    ],
+    "answer": "Our standard return policy allows you to return items within 30 days of delivery for a full refund in the original payment method, provided items are unworn and in original packaging."
+  },
+  {
+    "id": "faq_payment_methods",
+    "patterns": [
+      "what payment methods do you accept",
+      "can i pay with paypal",
+      "which credit cards are accepted",
+      "do you take apple pay"
+    ],
+    "answer": "We accept Visa, Mastercard, American Express, Discover, PayPal, Apple Pay, Google Pay, and Klarna for installment payments."
+  },
+  {
+    "id": "faq_international_customs",
+    "patterns": [
+      "do i have to pay customs fees",
+      "are import taxes included in checkout",
+      "who pays for customs duties"
+    ],
+    "answer": "For international shipments, all duties and applicable taxes are calculated and collected upfront at checkout so there are no surprise fees upon delivery."
+  },
+  {
+    "id": "faq_warranty_coverage",
+    "patterns": [
+      "do products come with a warranty",
+      "what is covered under warranty",
+      "how does the 1 year warranty work"
+    ],
+    "answer": "All hardware and electronics products include a comprehensive 1-year limited warranty covering manufacturing defects and hardware malfunctions."
+  },
+  {
+    "id": "faq_contact_phone",
+    "patterns": [
+      "what is your customer service phone number",
+      "phone number for support",
+      "can i call customer care"
+    ],
+    "answer": "You can reach our dedicated phone support team at +1 (800) 555-0199 Monday through Friday from 8:00 AM to 8:00 PM EST, or chat with us right here 24/7."
+  },
+  {
+    "id": "faq_data_privacy",
+    "patterns": [
+      "how do you use my personal data",
+      "is my chat history private",
+      "can i delete my conversation history"
+    ],
+    "answer": "Your privacy is paramount. Conversations are kept securely for 30 minutes to maintain session context and can be deleted at any moment using our 'Delete Chat' option or via our API."
+  }
+]

@@ -1,0 +1,114 @@
+@import "tailwindcss";
+
+/* Strict Light Theme Design Tokens — Section 3 Palette */
+:root {
+  color-scheme: light;
+
+  /* Surfaces & Backgrounds */
+  --bg-primary: #FAFAFC;
+  --bg-surface: #FFFFFF;
+  --bg-soft-accent: #F0EDFF;
+  --bg-success: #E7F7F0;
+  
+  /* Borders */
+  --border-subtle: #E9E9F2;
+  --border-strong: #D5D6E5;
+  --border-focus: #6658E8;
+
+  /* Text Hierarchies */
+  --text-primary: #202238;
+  --text-secondary: #777C94;
+  --text-muted: #9BA0B8;
+
+  /* Brand Accents */
+  --accent-primary: #6658E8;
+  --accent-secondary: #8D7CF5;
+  --accent-hover: #5546D8;
+  --accent-soft: #F0EDFF;
+  --accent-ink: #FFFFFF;
+
+  /* Status Colors */
+  --status-success: #15803D;
+  --status-danger: #DC2626;
+  --status-warning: #B45309;
+
+  /* Shadows & Radii */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-full: 9999px;
+  --shadow-subtle: 0 1px 3px rgba(32, 34, 56, 0.04), 0 1px 2px rgba(32, 34, 56, 0.02);
+  --shadow-card: 0 4px 12px rgba(32, 34, 56, 0.05), 0 1px 3px rgba(32, 34, 56, 0.02);
+  --shadow-hover: 0 10px 24px rgba(102, 88, 232, 0.1), 0 2px 6px rgba(32, 34, 56, 0.04);
+}
+
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  overflow-x: hidden;
+  max-width: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar for Light Theme */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F4F4F8;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D8D9E8;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #B5B7CF;
+}
+
+/* Accessible Focus Ring */
+:focus-visible {
+  outline: 2px solid var(--accent-primary);
+  outline-offset: 2px;
+}
+
+/* Smooth Caret Pulse */
+@keyframes smoothCaretPulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.15;
+  }
+}
+
+.caret-pulse {
+  animation: smoothCaretPulse 1s ease-in-out infinite;
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
